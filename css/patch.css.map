@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,6DAA6D;AAE7D,AAAA,SAAS,EAAE,SAAS,EAAE,SAAS,EAAE,SAAS,CAAA;EACtC,OAAO,EAAE,IAAI;CAChB",
+    "mappings": "AAAA,iEAAiE;AAEjE,AAAA,SAAS,EAAE,SAAS,EAAE,SAAS,EAAE,SAAS,CAAA;EACtC,OAAO,EAAE,IAAI;CAChB",
     "sources": [
         "patch.scss"
     ],
