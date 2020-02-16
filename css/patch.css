@@ -1,5 +1,15 @@
 /* the patch hides GA selenium fixes and maintains desired UI. */
-.patch001, #patch003, #patch007, .patch005 {
+.patch001, #patch007, .patch005 {
   display: none;
+}
+
+/* patch007 */
+.widget div div button:nth-child(2) {
+  display: none;
+}
+
+.widget {
+  /* restore p-2 class */
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=patch.css.map */
