@@ -12,19 +12,22 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./css/reset.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/patch.css">
         <title>Zomato</title>
       </head>
 <body>
 
   <!-- patch1, asking for 3 lis, not 4 | it says 'h-container' not 'h-container container'-->
 
-  <header class="h-container">
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </header>
+  <div class="patch001">
+    <header class="h-container">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </header>
+  </div>
 
   <!-- end of patch1 -->
 
@@ -157,8 +160,16 @@
         <h1 class="my-1 mb-2">Order Food Online</h1>
         <small>Best restaurants delivering to your doorstep.</small>
         <div class="mt-2 subwidget p-2">
-          <!-- patch3, remove p-2 -->
-          <div class="widget">
+
+          <!-- patch3, removed p-2 -->
+
+          <div class="patch003">
+            <div class="widget"></div>
+          </div>
+
+          <!-- end of patch3 -->
+
+          <div class="widget p-2">
             <h4>Enter your delivery location</h4>
             <div class="row my-1 p-2">
               <div class="col-8 p-1">
@@ -166,10 +177,14 @@
                 <input type="text" class="search-del form-control mt-2" id="search-del" placeholder="Type delivery location here">
               </div>
               <div class="col-4 p-1">
-                <button class="detect-btn mt-2 btn btn-outline-secondary">Detect</button>
-                <!-- patch7 -->
-                <button class="detect-btn">Detect</button>
+                <button class="detect-btn mt-2 btn btn-outline-secondary w-100">Detect</button>
+                
+                <!-- patch7 | removed additional classes-->
+                <div class="patch007">
+                  <button class="detect-btn">Detect</button>
+                </div>
                 <!-- end of patch7 -->
+              
               </div>
             </div>
             <button class="order-btn btn btn-success w-100  my-1">Order Food Online!</button>
@@ -215,18 +230,20 @@
   </section>
   <!-- end -->
 
-  <!-- patch5 -->
+  <!-- patch5 | removed additional classes-->
 
-  <ul class="category-list">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+  <div class="patch005">
+    <ul class="category-list">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 
   <!-- end of patch5 -->
 
