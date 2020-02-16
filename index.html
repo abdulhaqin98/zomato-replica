@@ -17,6 +17,13 @@
 <body>
     <!-- menu bar -->
     <header class="h-container container">
+      <!-- patch1 -->
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- patch1 -->
         <div class="row">
             <div class="col-6 d-flex flex-row align-items-center align-items-sm-start">
                 <ul>
@@ -70,11 +77,12 @@
                     </select>
                 </div>
                 <div class="col-sm-8 col-12 p-1">
-                    <input type="text" id="search-rest" placeholder="search for restaurants or cuisines..."
+                    <input type="text" id="search-rest" placeholder="Search for restaurants or cuisines..."
                       class="form-control my-1 w-100">
                 </div>
                 <div class="col-sm-2 col-12 p-1">
-                    <button class="search-btn btn btn-danger my-1 w-100">Search</button>
+                  <!-- patch8, added id=search-btn -->
+                    <button class="search-btn btn btn-danger my-1 w-100" id="search-btn">Search</button>
                 </div>
             </div>
         </div>
@@ -143,14 +151,19 @@
         <h1 class="my-1 mb-2">Order Food Online</h1>
         <small>Best restaurants delivering to your doorstep.</small>
         <div class="mt-2 subwidget p-2">
-          <div class="widget p-2">
+          <!-- patch3, remove p-2 -->
+          <div class="widget">
             <h4>Enter your delivery location</h4>
             <div class="row my-1 p-2">
               <div class="col-8 p-1">
-                <input type="text" class="search-del form-control mt-2" placeholder="Type delivery location here">
+                <!-- patch4, patch6, added id=search-del -->
+                <input type="text" class="search-del form-control mt-2" id="search-del" placeholder="Type delivery location here">
               </div>
               <div class="col-4 p-1">
                 <button class="detect-btn mt-2 btn btn-outline-secondary">Detect</button>
+                <!-- patch7 -->
+                <button class="detect-btn"></button>
+                <!-- end of patch7 -->
               </div>
             </div>
             <button class="order-btn btn btn-success w-100  my-1">Order Food Online!</button>
@@ -195,6 +208,21 @@
     </ul>
   </section>
   <!-- end -->
+
+  <!-- patch5 -->
+
+  <ul class="category-list">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <!-- end of patch5 -->
 
   <!-- localities -->
 
