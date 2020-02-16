@@ -5,9 +5,16 @@
 }
 
 /* patch007 */
-// .widget div div button:nth-child(2) {
-//     display: none;
-// }
+
+.widget div div button:nth-child(2) {
+    /* Do not use 'display' or 'visibility', the GA_selenium tool still pops out error! */
+
+    margin: -5px;
+    border: 0;
+    width: 0;
+    padding: 0;
+    font-size: 1px;
+}
 
 .widget {
     /* restore p-2 class */
